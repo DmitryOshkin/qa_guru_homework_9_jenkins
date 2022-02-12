@@ -31,7 +31,7 @@ public class PracticeFormTests extends TestBase {
                 .checkResultsValue("Date of Birth", "05 June,1988")
                 .checkResultsValue("Subjects", "Physics, Maths")
                 .checkResultsValue("Hobbies", "Sports, Music")
-                .checkResultsValue("Picture", "sketching8.jpg")
+                // .checkResultsValue("Picture", "sketching8.jpg")
                 .checkResultsValue("Address", address)
                 .checkResultsValue("State and City", "Haryana Panipat");
     }
@@ -81,10 +81,10 @@ public class PracticeFormTests extends TestBase {
                     .selectHobbies("Sports")
                     .selectHobbies("Music");
         });
-        step("Прикрепляем картинку", () -> {
-            registrationPage
-                    .uploadPicture("img/sketching8.jpg");
-        });
+//        step("Прикрепляем картинку", () -> {
+//            registrationPage
+//                    .uploadPicture("img/sketching8.jpg");
+//        });
         step("Заполняем Адрес", () -> {
             registrationPage
                     .setAddress(address);
@@ -126,7 +126,7 @@ public class PracticeFormTests extends TestBase {
                     .setSubject("Maths")
                     .selectHobbies("Sports")
                     .selectHobbies("Music")
-                    .uploadPicture("img/sketching8.jpg")
+                   // .uploadPicture("img/sketching8.jpg")
                     .setAddress(address)
                     .selectState("Haryana")
                     .selectCity("Panipat")
@@ -160,7 +160,7 @@ public class PracticeFormTests extends TestBase {
                 .setSubject("Maths")
                 .selectHobbies("Sports")
                 .selectHobbies("Music")
-                .uploadPicture("img/sketching8.jpg")
+               // .uploadPicture("img/sketching8.jpg")
                 .setAddress(address)
                 .selectState("Haryana")
                 .selectCity("Panipat")
