@@ -109,7 +109,7 @@ public class PracticeFormTests extends TestBase {
 
         Allure.label("owner", "OshkinDmitrii");
         Allure.feature("Forms");
-        Allure.story("Заполнение Student Registration Form блоком>");
+        Allure.story("Заполнение Student Registration Form блоком");
         Allure.label("severity", SeverityLevel.BLOCKER.value());
         Allure.link("demoqa", "https://demoqa.com/");
 
